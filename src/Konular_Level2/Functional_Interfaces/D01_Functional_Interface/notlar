@@ -1,0 +1,10 @@
+Functional Interface is an interface that defines a single abstract function(method)
+
+If an interface has many abstract methods, the concrete class must implement all
+abstract methods even it does not need them all. In this case functional interface
+can be a solution.
+
+For no "unwanted baggage" use Functional Interface.
+
+
+@FunctionalInterface  is optional. Used to make sure we have only 1 abstract method
