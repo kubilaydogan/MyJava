@@ -6,11 +6,13 @@ public class Konu_Character {
 
         System.out.println(Character.isAlphabetic(str.charAt(0))); // true
         System.out.println(Character.isDigit(str.charAt(1)));
+        System.out.println(!Character.isDigit(str.charAt(1)));
 
         System.out.println(Character.isUpperCase(str.charAt(0)));   // true
         System.out.println(Character.toLowerCase(str.charAt(0)));   // d
 
         System.out.println(getSum(str));
+
     }
 
     static int getSum(String str) {
@@ -22,5 +24,4 @@ public class Konu_Character {
         }
         return sum;
     }
-
 }
