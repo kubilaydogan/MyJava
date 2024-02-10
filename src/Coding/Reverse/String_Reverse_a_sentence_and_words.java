@@ -5,7 +5,19 @@ public class String_Reverse_a_sentence_and_words {
 
         String str = "Java is fun";
         System.out.println(reverseSentence(str));               // fun is Java
-        System.out.println(reverseEveryWord(str));
+        System.out.println(reverseEveryWordNew(str));           // avaJ si nuf
+        System.out.println(reverseEveryWord(str));              // avaJ si nuf
+        System.out.println(reverseWordsInSentence(str));        // avaJ si nuf
+
+    }
+
+    public static String reverseEveryWordNew(String str){
+        StringBuilder sb = new StringBuilder();
+        String[] arr = str.split(" ");
+        for(String each : arr){
+            sb.append(new StringBuilder(each).reverse()).append(" ");
+        }
+        return sb.toString().trim();
     }
 
     private static String reverseSentence(String str) {
@@ -38,4 +50,5 @@ public class String_Reverse_a_sentence_and_words {
         }
         return output.trim();
     }
+
 }

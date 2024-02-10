@@ -9,8 +9,25 @@ public class String_Reverse_SecondWord {
             OutPut: I evoL Java
      */
 
+    public static void main(String[] args) {
 
-    public String reverseSecondWord(String sentence) {
+        System.out.println(reverseSecondWord("I Love Java"));
+        System.out.println(reverse2ndWord("I Love Java"));
+
+    }
+
+    static String reverse2ndWord(String str) {
+        String output = "";
+        String[] arr = str.split(" ");
+        arr[1] = new StringBuilder(arr[1]).reverse().toString();
+        for (String each : arr) {
+            output += each + " ";
+        }
+        return output;
+    }
+
+
+    static String reverseSecondWord(String sentence) {
         String[] words = sentence.split(" ");
         String reversed = "";
 
@@ -25,4 +42,6 @@ public class String_Reverse_SecondWord {
         }
         return result.trim();
     }
+
+
 }

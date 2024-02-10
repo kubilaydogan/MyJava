@@ -12,12 +12,9 @@ public class String_Reverse_a_word {
         System.out.println( reverse2("TEAM") );
     }
 
-
-
     public static String reverse(String str) {
         return new StringBuilder(str).reverse().toString();
     }
-
 
     public static String reverse2(String str) {
         String reverse = "";

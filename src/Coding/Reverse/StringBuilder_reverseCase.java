@@ -1,6 +1,6 @@
 package Coding.Reverse;
 
-public class SB_reverseCase {
+public class StringBuilder_reverseCase {
     public static void main(String[] args) {
         System.out.println(reverseCase("HI dogan"));            // hi DOGAN
         System.out.println(reverseCase("hEllO"));               // HeLLo
@@ -8,6 +8,7 @@ public class SB_reverseCase {
     }
 
 
+    // "hEllO" ==> HeLLo
     public static String reverseCase(String text) {
         StringBuilder sb = new StringBuilder(text);
         for (int i = 0; i < text.length(); i++) {
@@ -21,4 +22,5 @@ public class SB_reverseCase {
         }
         return sb.toString();
     }
+
 }

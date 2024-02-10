@@ -13,6 +13,7 @@ public class Array_Reverse_StringArray {
 
     }
 
+    // [a,b,c] ==> [c,b,a]
     public static String[] reverseStingArray(String[] arr) {
         String[] result = new String[arr.length];
         int n = 0;
@@ -23,9 +24,10 @@ public class Array_Reverse_StringArray {
     }
 
     public static String[] reverseStingArray2(String[] arr) {
-        List<String> rev = Arrays.asList(arr);
-        Collections.reverse(rev);
-        arr = (String[]) rev.toArray();
-        return arr;
+        List<String> list = Arrays.asList(arr);
+        Collections.reverse(list);
+        return (String[]) list.toArray();
     }
+    // FOR List<Integer>
+    //  return list.stream().mapToInt(i->i).toArray();
 }
