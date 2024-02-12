@@ -48,19 +48,29 @@ map.put(key, value);
 int n = Integer.parseInt("77");
 String str = String.valueOf(77);
 ```
-#### String to Array
+### String to Array
 ```java
 String[] arr = str.split(" ");
 char[] arr = str.toCharArray();
 ```
-#### Array & String to List
+### Array & String to List
 ```java
 List<String> list = Arrays.asList(str.split("\\s+"));
 List<String> list = Arrays.asList(arr);
 ```
-#### List to Set
+### List to Set
 ```java
 Set<String> set = new HashSet<>(list);
+```
+###  String to Char[] array
+```java
+char[] arr = str.toCharArray();
+```
+
+### Char[] array to String
+```java
+String str = new String(charArray);
+String str = String.valueOf(charArray);
 ```
 
 # String
@@ -111,11 +121,6 @@ boolean hasLowerCaseChar = str.matches("(.*[a-z].*)"),
         hasUpperCaseChar = str.matches("(.*[A-Z].*)"),
         hasDigits = str.matches("(.*[0-9].*)"),
         hasSpecialChar = str.matches("(.*[ -/, :-@].*)");
-```
-
-### `CHAR ARRAY to STRING`
-```java
-String str = new String(charArray);
 ```
 
 <br>
