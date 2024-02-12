@@ -1,4 +1,4 @@
-package Konular.Collections;
+package Konular.Collections_New;
 
 import java.security.PrivilegedExceptionAction;
 import java.util.ArrayList;
@@ -11,12 +11,12 @@ public class Collections_List_Sublist {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
 
         // changes in a sublist effects original list as sublist does not create a new list
-        List<Integer> range;
-        range = list.subList(1, 3);
+        List<Integer> range = list.subList(1, 3);
         System.out.println(range);             // [2, 3]
 
         range.set(0, 20);
         range.set(1, 30);
+
         System.out.println(list);              // [1, 20, 30, 4, 5, 6, 7]
 
         //  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
