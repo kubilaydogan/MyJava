@@ -102,7 +102,9 @@ int[] arr = {10, 20, 30};
 int[] array = new int[3];
 array[0] = 10;
 ```
-
+```java
+System.out.println(Arrays.toString(arr));
+```
 ### `COMPARE`
 ```java
 Arrays.equals(arr1,arr2)
@@ -112,7 +114,21 @@ Arrays.equals(arr1,arr2)
 String[] arr = str.split("");
 char[] ch = str.toCharArray();
 ```
+### `Copying one array to another`
+```java
+int[] a = {10, 20, 30, 40, 50};
+int[] b = Arrays.copyOf(a, a.length);    // [10, 20, 30, 40, 50]
+int[] c = Arrays.copyOf(a, 3);           // [10, 20, 30]
+int[] d = Arrays.copyOf(a, 7);           // [10, 20, 30, 40, 50, 0, 0]
+int[] e = Arrays.copyOfRange(a, 1, 4);   // [20, 30, 40]
 
+>> you can also use foreach loop to copy an array
+```
+### `Fill an array`
+```java
+String[] values = new String[5];
+Arrays.fill(values, 2, 4, "cat");       // [null, null, cat, cat, null]
+```
 <br>
 
 # Sort - Reverse Order
