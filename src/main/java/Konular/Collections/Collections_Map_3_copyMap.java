@@ -1,32 +1,27 @@
 package Konular.Collections;
+
+import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class Collections_Map_3_copyMap {
-    static class Test{
-        Map<String, String> map1, map2;
-    }
 
     public static void main(String[] args) {
-        Test test = new Test();
-        test.map1 = new HashMap<>();
-        test.map2 = new HashMap<String, String>();
 
-        test.map1.put("ALATLI", "20895548");
-        test.map1.put("DAMLA", "20894828");
-        test.map1.put("AYKUT", "20893085");
-        test.map1.put("CAN", "20793172");
+        Map<String, Integer> map1 = new HashMap<>();
+        map1.put("A", 1);
+        map1.put("B", 2);
+        map1.put("C", 3);
+        map1.put("D", 4);
 
-        test.map2.putAll(test.map1);
+        Map<String, Integer> map2 = new HashMap<>();
+        map2.put("E", 5);
+        map2.put("F", 6);
+        map2.put("G", 7);
+        map2.put("H", 8);
 
-
-        //with putAll we copied the map to another. But when you print, the order will be different
-
-        Map treeMap = new TreeMap(test.map2);
-
-        System.out.println(test.map1);
-        System.out.println(test.map2);      // siralama karisik
-        System.out.println(treeMap);        // sorted
+        map2.putAll(map1);
+        System.out.println(map2);
     }
 }

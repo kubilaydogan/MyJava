@@ -167,6 +167,91 @@ Arrays.fill(values, 2, 4, "cat");       // [null, null, cat, cat, null]
 
 <br>
 
+# Character
+
+---
+```java
+assertTrue(Character.isDigit('7'));
+assertTrue(Character.isLetter('a'));
+assertTrue(Character.isAlphabetic('a'));
+
+assertTrue(Character.isLowerCase('a'));
+assertTrue(Character.isUpperCase('A'));
+
+assertTrue(Character.isWhitespace(' '));
+
+int n = Character.getNumericValue('9');     // n= 9    
+```
+
+<br>
+
+# Iterator
+
+---
+```java
+Iterator<Integer> iterator = list.iterator();
+
+while(iterator.hasNext()) {
+    Integer i = iterator.next();
+    if(i < 10) {
+        iterator.remove();
+    }
+} 
+```
+```java
+/* *** ITERATE KEYS *** */
+Set<String> keys = map.keySet();
+Iterator<String> iter = keys.iterator();
+while (iter.hasNext()) {
+    if (iter.next().equalsIgnoreCase("Hello"))
+        iter.remove();
+}
+```
+<br>
+
+# MAP
+
+---
+```java
+Map<String, Integer> map = new HashMap<>();
+
+map.put(key, value);
+map.remove(key);
+map.get(key);
+map.replace(key, oldValue, newValue);
+
+int s = map.size();
+boolean b = map.containsKey(key);
+boolean b = map.containsValue(value);
+boolean b = map.isEmpty();
+
+map2.putAll(map1);
+
+map.forEach((K, V) -> System.out.println(K + ":" + V));
+```
+### `Map Entry`
+```java
+for (Map.Entry<String, Integer> pairs : map.entrySet()) {
+    System.out.println(pairs);
+    System.out.print(pairs.getKey());
+    System.out.print(pairs.getValue());
+}
+```
+```java
+System.out.println("Map :" + map);               //  {Melisa=8, Duru=9, Hidayet=6, Batu=3}
+System.out.println("Set :" + map.entrySet());    //  [Melisa=8, Duru=9, Hidayet=6, Batu=3]
+System.out.println("Values :" + map.values());   //  [8, 9, 6, 3]
+System.out.println("Keys :" + map.keySet());     //  [Melisa, Duru, Hidayet, Batu]
+```
+```java
+Collection<Integer> myValues = map.values();
+myValues.removeIf(integer -> integer == 7);
+
+Set<String> myKeys = map.keySet();
+myKeys.removeIf(s -> s.equalsIgnoreCase("Hello"));
+```
+<br>
+
 # DecimalFormat
 
 ---
