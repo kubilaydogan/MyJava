@@ -1,3 +1,68 @@
+# Initializations
+
+---
+#### String
+```java
+String str = "Java";
+String str = new String("Java");
+```
+#### StringBuilder
+```java
+StringBuilder sb = new StringBuilder();
+sb.append("black");
+
+StringBuilder sb = new StringBuilder("black");
+```
+#### Array
+```java
+int[] arr = {10, 20, 30};
+
+int[] array = new int[3];
+array[0] = 10;
+```
+#### List
+```java
+List<String> list = new ArrayList<>();
+list.add("A");
+
+List<String> ls = new ArrayList<>(Arrays.asList("A","B","C"));
+```
+#### Set
+```java
+Set<String> set = new HashSet<>();
+set.add("Hello");
+```
+#### Map
+```java
+Map<String, Integer> map = new HashMap<>();
+Map map = new HashMap();
+map.put(key, value);
+```
+
+
+# Conversions
+
+---
+
+```java
+int n = Integer.parseInt("77");
+String str = String.valueOf(77);
+```
+#### String to Array
+```java
+String[] arr = str.split(" ");
+char[] arr = str.toCharArray();
+```
+#### Array & String to List
+```java
+List<String> list = Arrays.asList(str.split("\\s+"));
+List<String> list = Arrays.asList(arr);
+```
+#### List to Set
+```java
+Set<String> set = new HashSet<>(list);
+```
+
 # String
 
 ---
@@ -90,6 +155,17 @@ sb.setLength(5);             // hello
 sb.deleteCharAt(2);          // helo
 sb.delete(1, 4);             // h
 ```
+<br>
+
+# Collections
+
+```java
+Collections.reverse(list);
+Collections.sort(list);
+Collections.addAll(list, arr);
+int n = Collections.frequency(list, element);
+```
+
 <br>
 
 # Array
