@@ -1,0 +1,25 @@
+
+ITERABLE
+    ==> Collection
+           ==> List
+                --> ArrayList
+           ==> Set
+                --> HashSet
+                ==> SortedSet
+                    --> TreeSet
+           ==> Deque
+                --> ArrayDeque
+
+MAP
+  --> HashMap
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<<Iterable>> is a top level interface that allows any
+collection to be used in a forEach loop
+
+<<Collection>> interface extends Iterable and describes
+generic collection capabilities, such as adding and removing
+element
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

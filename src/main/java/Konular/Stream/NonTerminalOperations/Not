@@ -1,0 +1,5 @@
+The non-terminal stream operations transform or
+filter the elements in the stream.
+
+When you add a non-terminal operation to a stream,
+you get a new stream back as result.

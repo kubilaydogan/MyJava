@@ -21,22 +21,31 @@ char c = a.charAt(0);
 
 ### `CHAR ARRAY to STRING`
 ```java
-String s = new String(charArray);
+String str = new String(charArray);
 ```
 
-# DecimalFormat
+# SORT - REVERSE ORDER
 
----
-```java
-double pi = 3.14597895623;
-String p = new DecimalFormat ("##.##").format(pi); // 3.15    
-```
-```java
-DecimalFormat df = new DecimalFormat("#00.00##");
-double d = 120.6;
-String s = df.format(d);      // 120.60
-String s = df.format(81.9);   // 81.90
-```
+<style>
+    .sort {
+        width: 100%;
+        text-align: left;
+    }
+    .sort th {
+        background: #b2b2b2!important;;
+        text-align: center;
+    }
+</style>
+<div class="sort">
+
+|                 | **Array**                                     | **List**                               |
+|:----------------|:----------------------------------------------|:---------------------------------------|
+| `Sort`          | Arrays.sort(arr);                             | Collections.sort(list);                |
+| `Reverse Order` | Arrays.sort(arr, Collections.reverseOrder()); | list.sort(Collections.reverseOrder()); |
+</div>
+
+> **Sort order:** numbers ➡️ special chars ➡️ uppercase ➡️ lowercase
+
 # ARRAY
 
 ---
@@ -62,3 +71,16 @@ String[] arr = str.split("");
 char[] ch = str.toCharArray();
 ```
 
+# DecimalFormat
+
+---
+```java
+double pi = 3.14597895623;
+String p = new DecimalFormat ("##.##").format(pi); // 3.15    
+```
+```java
+DecimalFormat df = new DecimalFormat("#00.00##");
+double d = 120.6;
+String s = df.format(d);      // 120.60
+String s = df.format(81.9);   // 81.90
+```
