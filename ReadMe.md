@@ -265,3 +265,17 @@ double d = 120.6;
 String s = df.format(d);      // 120.60
 String s = df.format(81.9);   // 81.90
 ```
+
+<br>
+
+# Remove if
+
+---
+
+|                                | **removeIf**                                                                                        | 
+|:-------------------------------|:------------------------------------------------------------------------------------------------|
+| **`List<String>`**             | list.removeIf(s -> s.equalsIgnoreCase("..."));                                                  |      
+| **`Map<String, Integer> map`** | `Collection`<Integer> myValues = `map.values()`;<br>myValues.removeIf(integer -> integer == 2); |      
+| **`Map<String, Integer> map`** | `Set`<String> myKeys = `map.keySet()`;<br>myKeys.removeIf(s -> s.equalsIgnoreCase("Privet")); |
+
+<br>

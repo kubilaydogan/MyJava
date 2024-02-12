@@ -1,4 +1,4 @@
-package Konular.Collections;
+package Konular.Collections_New;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,9 +16,9 @@ public class Collections_Array_To_List {
         /*  Convert an Array of primitives to a List|Set */
         char[] chars = {'a', 'b', 'c', 'd', 'e', 'f'};
 
-        List<Character> list3 = new ArrayList<>();
+        List<Character> lst = new ArrayList<>();
         for (char each : chars) {
-            list2.add(each);        // int[] ve digerleri de ayni sekilde
+            lst.add(each);        // int[] ve digerleri de ayni sekilde
         }
 
 

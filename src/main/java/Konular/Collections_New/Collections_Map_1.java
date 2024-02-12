@@ -1,51 +1,25 @@
-package Konular.Collections;
+package Konular.Collections_New;
 
 import java.util.*;
 
 public class Collections_Map_1 {
     public static void main(String[] args) {
-        // put(K, V)
-        // remove(K) or (remove(K,V)
-        // size()
-        // value = map.get(K)
-        // boolean = map.containsKey(K)
-        // boolean = map.containsValue(V)
-        // foreach((K,V) -> .... )
-        // getOrDefault(K, V) ==> if K not found, return V
-        // replace(K, old V, new V)
-        //
-        // Set<> = map.keySet();
-        // Collection<> allValues = map.values();
-        // BU IKISINDE REMOVE key OR value KULLANIRSAN, ORJINAL MAP'I ETKILER
 
         Map<String, Integer> map = new HashMap<>();
         map.put("Hello", 5);
         map.put("Hi", 2);
-        map.put("Dersler_duzenlenecek.Merhaba", 7);
+        map.put("Merhaba", 7);
         map.put("Selam", 5);
         map.put("Privet", 6);
 
-        map.remove("Dersler_duzenlenecek.Merhaba");
-        map.remove(5);
-        map.remove("Hi", 2);
-
-        System.out.println(map);            // {Hello=5, Privet=9, Selam=3}
-        int val = map.get("Hello");         // 5
-        int size = map.size();              // 3
-
-        boolean hasHello = map.containsKey("Hello");    // true
-        boolean hasFive = map.containsValue(5);         // true
-
-        map.forEach((K, V) -> System.out.println("\tLength of " + K + " is " + V));
-
-        /* *** SHORTCUT -> removeIf *** */
+        /* *** removeIf *** */
         Collection<Integer> myValues = map.values();
-        myValues.removeIf(integer -> integer == 7);
+        myValues.removeIf(integer -> integer == 2);
 
         Set<String> myKeys = map.keySet();
-        myKeys.removeIf(s -> s.equalsIgnoreCase("Hello"));
+        myKeys.removeIf(s -> s.equalsIgnoreCase("Privet"));
 
-        // DIPNOT
+        // Note
         List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "d"));
         list.removeIf(s -> s.equalsIgnoreCase("D"));
         System.out.println(list);   //[a, b, c]
@@ -87,20 +61,6 @@ public class Collections_Map_1 {
             if (i.next() == 7)
                 i.remove();
         }
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
-        // MAP ENTRY
-        for (Map.Entry<String, Integer> pairs : map.entrySet()) {
-            System.out.println(pairs);
-            System.out.print(pairs.getKey() + ":" + pairs.getValue());
-        }
-
-        System.out.println(map.isEmpty());
-
-        // if not found return 5
-        System.out.println(map.getOrDefault("Hallo", 5));       // map'e eklemez
-
-        map.replace("Selam", 5, 10);
-        System.out.println(map);
     }
 }

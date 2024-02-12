@@ -1,4 +1,4 @@
-package Konular.Collections;
+package Konular.Collections_New;
 
 import java.util.ArrayList;
 import java.util.Arrays;
