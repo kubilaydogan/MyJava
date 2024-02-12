@@ -1,6 +1,7 @@
-# STRING
+## STRING
 
 ---
+
 ### `CONCAT`
 ```java
 str = str.concat(str2);
@@ -24,19 +25,31 @@ char c = a.charAt(0);
 String str = new String(charArray);
 ```
 
-# SORT - REVERSE ORDER
+## SORT - REVERSE ORDER
 
-<style>
-    .sort {
-        width: 100%;
-        text-align: left;
-    }
-    .sort th {
-        background: #b2b2b2!important;;
-        text-align: center;
-    }
-</style>
-<div class="sort">
+---
+
+[//]: # (<style>)
+
+[//]: # (    .sort {)
+
+[//]: # (        width: 100%;)
+
+[//]: # (        text-align: left;)
+
+[//]: # (    })
+
+[//]: # (    .sort th {)
+
+[//]: # (        background: #b2b2b2!important;;)
+
+[//]: # (        text-align: center;)
+
+[//]: # (    })
+
+[//]: # (</style>)
+
+[//]: # (<div class="sort">)
 
 |                 | **Array**                                     | **List**                               |
 |:----------------|:----------------------------------------------|:---------------------------------------|
