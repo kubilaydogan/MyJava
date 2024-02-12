@@ -92,6 +92,29 @@ sb.delete(1, 4);             // h
 ```
 <br>
 
+# Array
+
+---
+
+### `Initialize an Array`
+```java
+int[] arr = {10, 20, 30};
+int[] array = new int[3];
+array[0] = 10;
+```
+
+### `COMPARE`
+```java
+Arrays.equals(arr1,arr2)
+```
+### `STRING to ARRAY`
+```java
+String[] arr = str.split("");
+char[] ch = str.toCharArray();
+```
+
+<br>
+
 # Sort - Reverse Order
 
 ---
@@ -127,31 +150,6 @@ sb.delete(1, 4);             // h
 > **Sort order:** numbers ➡️ special chars ➡️ uppercase ➡️ lowercase
 
 <br>
-
-# Array
-
----
-
-### `Initialize an Array`
-```java
-int[] arr = {10, 20, 30};
-int[] array = new int[3];
-array[0] = 10;
-```
-### `SORT`
-```java
-Arrays.sort(arr);
-Collections.sort(list);
-```
-### `COMPARE`
-```java
-Arrays.equals(arr1,arr2)
-```
-### `STRING to ARRAY`
-```java
-String[] arr = str.split("");
-char[] ch = str.toCharArray();
-```
 
 # DecimalFormat
 
