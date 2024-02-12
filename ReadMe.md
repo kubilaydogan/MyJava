@@ -1,4 +1,4 @@
-## STRING
+# STRING
 
 ---
 
@@ -25,7 +25,9 @@ char c = a.charAt(0);
 String str = new String(charArray);
 ```
 
-## SORT - REVERSE ORDER
+<br>
+
+# SORT - REVERSE ORDER
 
 ---
 
@@ -58,6 +60,8 @@ String str = new String(charArray);
 </div>
 
 > **Sort order:** numbers ➡️ special chars ➡️ uppercase ➡️ lowercase
+
+<br>
 
 # ARRAY
 
