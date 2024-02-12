@@ -1,6 +1,5 @@
-package Konular.Collections_New;
+package Konular.Collections;
 
-import java.security.PrivilegedExceptionAction;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

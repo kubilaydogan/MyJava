@@ -1,4 +1,4 @@
-package Konular.Collections_New;
+package Konular.Collections;
 
 import java.util.HashMap;
 import java.util.Map;
