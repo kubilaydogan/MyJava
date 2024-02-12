@@ -20,26 +20,27 @@ public class Konu_StringBuilder {
         System.out.println(a);           // blackteas73.16       --or--
 
         sb.append("String" + true + 123 + 0.5 + 'c' + 1.235f);          // Stringtrue1230.5c1.235
+        sb.reverse();
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         int l = sb.length();
         char c = sb.charAt(0);
-        sb.delete(15,23);                      // Stringtrue1230.
-        sb.deleteCharAt(14);                   // Stringtrue1230
-        sb.reverse();
-        System.out.println(sb);                // 0321eurtgnirtS
-        sb.insert(0, 'K');           // K0321eurtgnirtS
-        sb.insert(2, 1);              // K01321eurtgnirtS
-        sb.replace(5, 16,"");   // K0132
-        sb.setLength(3);                       // K01
 
-        System.out.println(sb);
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         System.out.println(sb.capacity());    // 34
         sb.trimToSize();
         System.out.println(sb.capacity());    //  22
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+        StringBuilder sb1 = new StringBuilder("helloworld");
+        sb1.insert(0, 'K');             // Khelloworld
+        sb1.insert(1, 1);               // K1helloworld
+        sb1.insert(2, ":");           // K1:helloworld
+        sb1.replace(0, 3, "");    // helloworld
+        sb1.setLength(5);                        // hello
+        sb1.deleteCharAt(2);               // helo
+        sb1.delete(1, 4);                        // h
+        System.out.println(sb1);
 
     }
 }

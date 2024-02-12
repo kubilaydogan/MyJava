@@ -33,18 +33,6 @@ public class Konu_String2 {
         int k = a.indexOf('a');                      // k = -1
         char c = a.charAt(0);                        // c = H
 
-        String sentence = "The cow...., jumped! over3    4the6 moon.";
-
-        // remove digits & special charachters & multiple spaces
-        sentence = sentence.replaceAll("[^a-zA-Z]", " ");
-        sentence = sentence.replaceAll("\\s+", " ");
-
-        System.out.println(sentence);       // The cow jumped over the moon
-
-        String str = "The cow...., jumped! over3    4the6 moon.";
-        str = str.replaceAll("[^0-9]", "");
-        System.out.println(str);        // 346
-
 
     }
 }
