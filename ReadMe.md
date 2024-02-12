@@ -53,10 +53,14 @@ String str = String.valueOf(77);
 String[] arr = str.split(" ");
 char[] arr = str.toCharArray();
 ```
-### Array & String to List
+### Array to List
 ```java
 List<String> list = Arrays.asList(str.split("\\s+"));
 List<String> list = Arrays.asList(arr);
+```
+### Array to Set
+```java
+Set<String> set = new HashSet<>(Arrays.asList(arr));
 ```
 ### List to Set
 ```java
@@ -210,6 +214,29 @@ int[] e = Arrays.copyOfRange(a, 1, 4);   // [20, 30, 40]
 String[] values = new String[5];
 Arrays.fill(values, 2, 4, "cat");       // [null, null, cat, cat, null]
 ```
+<br>
+
+# SET
+
+---
+```java
+Set<String> set = new HashSet<>();
+set.add("Hello");
+boolean B = set.contains("Hello"); 
+set.remove("Hello");
+set.clear();    // []        
+
+// combine sets
+set1.addAll(set2);
+set.addAll(list);
+
+// To find intersection (common values)
+set1.retainAll(set2);
+
+// To find the difference (set1'in set2'den farkı)
+set1.removeAll(set2);
+```
+
 <br>
 
 # Sort - Reverse Order
