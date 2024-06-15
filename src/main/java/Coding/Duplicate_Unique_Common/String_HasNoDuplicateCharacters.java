@@ -1,4 +1,4 @@
-package Coding.Duplicate_Unique;
+package Coding.Duplicate_Unique_Common;
 
 public class String_HasNoDuplicateCharacters {
     public static void main(String[] args) {

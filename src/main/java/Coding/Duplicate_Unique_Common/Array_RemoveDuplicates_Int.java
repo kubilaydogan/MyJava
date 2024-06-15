@@ -1,11 +1,11 @@
-package Coding.Duplicate_Unique;
+package Coding.Duplicate_Unique_Common;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Array_RemoveDuplicates {
+public class Array_RemoveDuplicates_Int {
 
     /*
     Write a function that can remove the duplicates from an array of integers

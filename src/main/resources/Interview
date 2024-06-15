@@ -1,0 +1,22 @@
+1.	How do you combine two Strings?
+2.	What’s the differences between StringBuffer and StringBuilder?
+3.	What’s synchronization?
+4.	Tell me the differences between void and non-void methods
+5.	Can you explain what is 'public static void' ?
+6.	Briefly explain the differences between Array and ArrayList
+7.	What are the primitives and wrapper classes in java? Their differences
+8.	Explain me the method overloading and method overriding?
+    Return type of overloaded method should be same or not?
+    Can you overload and override the constant methods?
+9.	Differences between instance variable, class and local variables?
+10.	what’s an instance method ? What is static method?
+11.	what’s constructor? Declaration ?
+12.	inner class vs outer class
+a.	Can outer class be static?
+b.	Can inner class be static?
+c.	Can you create an object from the inner class?
+d.	Can we have main method in inner class ?
+13.	what are the blocks in java that you have used in your framework?
+14.	difference between final and finally?
+15.	What is toString method in java.
+16.	Did you use Encapsulation in your framework? How ? What’s the befits using encapsulation?

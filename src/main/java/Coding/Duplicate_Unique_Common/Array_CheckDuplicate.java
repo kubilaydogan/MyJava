@@ -1,4 +1,4 @@
-package Coding.Duplicate_Unique;
+package Coding.Duplicate_Unique_Common;
 
 import java.util.Arrays;
 import java.util.HashSet;

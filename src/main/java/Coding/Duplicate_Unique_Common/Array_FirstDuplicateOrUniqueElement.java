@@ -1,4 +1,4 @@
-package Coding.Duplicate_Unique;
+package Coding.Duplicate_Unique_Common;
 
 public class Array_FirstDuplicateOrUniqueElement {
     public static void main(String[] args) {

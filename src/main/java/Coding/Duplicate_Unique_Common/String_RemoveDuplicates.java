@@ -1,9 +1,6 @@
-package Coding.Duplicate_Unique;
+package Coding.Duplicate_Unique_Common;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class String_RemoveDuplicates {
     /*
@@ -16,6 +13,17 @@ public class String_RemoveDuplicates {
     }
 
     // "AAABBBCCC" ==> ABD
+
+    public static String removeDuplicates(String str) {
+        List<String> list = Arrays.asList(str.split(""));
+        Set<String> set = new HashSet<>(list);
+        String result = "";
+        for (String each : set) {
+            result += each;
+        }
+        return result;
+    }
+
     public static String removeDuplicates2(String a) {
         String result = "";
         for (int i = 0; i < a.length(); i++) {
@@ -34,16 +42,6 @@ public class String_RemoveDuplicates {
             }
         }
         return result.toString();
-    }
-
-    public static String removeDuplicates(String str) {
-        List<String> list = Arrays.asList(str.split(""));
-        Set<String> set = new HashSet<>(list);
-        String result = "";
-        for (String each : set) {
-            result += each;
-        }
-        return result;
     }
 
 

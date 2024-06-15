@@ -35,10 +35,11 @@ public class Konu_Arrays {
 
         // Copying one array to another  (you can also use foreach loop to copy)
         int[] a = {10, 20, 30, 40, 50};
-        int[] b = Arrays.copyOf(a, a.length);              // [10, 20, 30, 40, 50]
+
+        int[] b = Arrays.copyOf(a, a.length);    // [10, 20, 30, 40, 50]
         int[] c = Arrays.copyOf(a, 3);           // [10, 20, 30]
         int[] d = Arrays.copyOf(a, 7);           // [10, 20, 30, 40, 50, 0, 0]
-        int[] f = Arrays.copyOfRange(a, 1, 4);      // [20, 30, 40]
+        int[] f = Arrays.copyOfRange(a, 1, 4);   // [20, 30, 40]
         System.out.println(Arrays.toString(f));
 
         int[] e = new int[a.length];
