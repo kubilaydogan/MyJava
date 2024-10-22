@@ -1,9 +1,6 @@
 package Coding.Duplicate_Unique_Common;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Array_RemoveDuplicates_Int {
 
@@ -19,7 +16,6 @@ public class Array_RemoveDuplicates_Int {
     }
 
     //solution 1
-
     public static int[] removeDuplicates(int[] array) {
         Set<Integer> set = new HashSet<>();
         for (int each : array) {
@@ -51,6 +47,20 @@ public class Array_RemoveDuplicates_Int {
     // solution 3
     public static int[] removeDuplicatesWithStream(int[] array){
         return Arrays.stream(array).distinct().toArray();
+    }
+
+
+    public static List removeDuplicates3(int[] array) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int each : array) {
+            if (!list.contains(each)) {
+                list.add(each);
+            }
+        }
+        return list;
+        //arr isterse return list.stream().mapToInt(i->i).toArray();
+        // String arr olsaydi return list.stream().map(String::valueOf).toArray(String[]::new);
+        // ya da yeni arr olustur ve for each ile doldur
     }
 
 

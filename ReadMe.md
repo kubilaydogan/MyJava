@@ -1,35 +1,54 @@
-# Initializations
+# Java
 
 ---
+#### parseInt vs valueOf
+```java
+int n = Integer.parseInt("77");
+Integer i = Integer.valueOf("77");
+String str = String.valueOf(77);
+```
+#### Collections
+
+```java
+Collections.reverse(list);
+Collections.sort(list);
+Collections.addAll(list, arr);
+int n = Collections.frequency(list, element);
+```
+
 #### String
 ```java
 String str = "Java";
 String str = new String("Java");
+String str = new String(charArray);
 ```
 #### StringBuilder
 ```java
 StringBuilder sb = new StringBuilder();
-sb.append("black");
-
 StringBuilder sb = new StringBuilder("black");
+sb.append("black");
 ```
 #### Array
 ```java
 int[] arr = {10, 20, 30};
-
-int[] array = new int[3];
-array[0] = 10;
+int[] arr = new int[3];
+String[] arr = str.split(" ");
+char[] arr = str.toCharArray();
+arr[0] = 10;
 ```
 #### List
 ```java
 List<String> list = new ArrayList<>();
+List<String> list = new ArrayList<>(Arrays.asList("A","B","C"));
+List<String> list = Arrays.asList(str.split("\\s+"));
+List<String> list = Arrays.asList(arr);
 list.add("A");
-
-List<String> ls = new ArrayList<>(Arrays.asList("A","B","C"));
 ```
 #### Set
 ```java
 Set<String> set = new HashSet<>();
+Set<String> set = new HashSet<>(list);
+Set<String> set = new HashSet<>(Arrays.asList(arr));
 set.add("Hello");
 ```
 #### Map
@@ -37,44 +56,6 @@ set.add("Hello");
 Map<String, Integer> map = new HashMap<>();
 Map map = new HashMap();
 map.put(key, value);
-```
-
-
-# Conversions
-
----
-
-```java
-int n = Integer.parseInt("77");
-String str = String.valueOf(77);
-```
-### String to Array
-```java
-String[] arr = str.split(" ");
-char[] arr = str.toCharArray();
-```
-### Array to List
-```java
-List<String> list = Arrays.asList(str.split("\\s+"));
-List<String> list = Arrays.asList(arr);
-```
-### Array to Set
-```java
-Set<String> set = new HashSet<>(Arrays.asList(arr));
-```
-### List to Set
-```java
-Set<String> set = new HashSet<>(list);
-```
-###  String to Char[] array
-```java
-char[] arr = str.toCharArray();
-```
-
-### Char[] array to String
-```java
-String str = new String(charArray);
-String str = String.valueOf(charArray);
 ```
 
 # String
@@ -127,17 +108,10 @@ boolean hasLowerCaseChar = str.matches("(.*[a-z].*)"),
         hasSpecialChar = str.matches("(.*[ -/, :-@].*)");
 ```
 
-<br>
-
 # StringBuilder
 
 ---
 
-```java
-StringBuilder sb = new StringBuilder();
-StringBuilder sb = new StringBuilder("black");
-
-```
 ### `METHODS`
 ```java
 String str = sb.toString();
@@ -164,18 +138,6 @@ sb.setLength(5);             // hello
 sb.deleteCharAt(2);          // helo
 sb.delete(1, 4);             // h
 ```
-<br>
-
-# Collections
-
-```java
-Collections.reverse(list);
-Collections.sort(list);
-Collections.addAll(list, arr);
-int n = Collections.frequency(list, element);
-```
-
-<br>
 
 # Array
 
@@ -214,7 +176,6 @@ int[] e = Arrays.copyOfRange(a, 1, 4);   // [20, 30, 40]
 String[] values = new String[5];
 Arrays.fill(values, 2, 4, "cat");       // [null, null, cat, cat, null]
 ```
-<br>
 
 # SET
 
@@ -237,7 +198,6 @@ set1.retainAll(set2);
 set1.removeAll(set2);
 ```
 
-<br>
 
 # Sort - Reverse Order
 

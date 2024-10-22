@@ -12,8 +12,7 @@ public class Array_MoveAllZerosToTheEnd {
         System.out.println(Arrays.toString(arr));   // [0, 0, 0, 1, 4, 5, 7]
     }
 
-    static int[] moveZerosToTheEnd(int[] array) {
-
+    public static int[] moveZerosToTheEnd(int[] array) {
         int[] result = new int[array.length];
         int i = 0;
         for (int each : array) {

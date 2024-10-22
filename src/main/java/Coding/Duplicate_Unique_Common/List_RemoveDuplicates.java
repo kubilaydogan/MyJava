@@ -11,7 +11,8 @@ public class List_RemoveDuplicates {
 
         System.out.println(removeDuplicates(list));             // [A, B, C, D]
         System.out.println(removeDuplicates(list2));            // [1, 2, 3]
-        System.out.println(removeDuplicates2(list2));
+        System.out.println(removeDuplicates2(list2));         // [1, 2, 3]
+        System.out.println(removeDuplicates2(list));          //  [A, B, C, D]
     }
 
     private static Set removeDuplicates(List list) {

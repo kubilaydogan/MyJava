@@ -17,7 +17,7 @@ public class Collections_Queue {
  */
 
     public static void main(String[] args) {
-        // Since Queue is an interface, we cann't use "new Queue<>()"
+        // Since Queue is an interface, we can't use "new Queue<>()"
         // Common way to use:
         Queue<Integer> queue = new LinkedList<>();         // keeps insertion order
         Queue<Integer> queue2 = new PriorityQueue<>();     // sorts the elements
